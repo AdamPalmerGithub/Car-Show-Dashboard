@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import styles from "./UpdateCar.module.css";
 
 function UpdateCar({ car, baseUrl, onUpdated }) {
     const [formData, setFormData] = useState({
@@ -55,11 +56,14 @@ function UpdateCar({ car, baseUrl, onUpdated }) {
 
     return (
         <>
-            <button onClick={() => setShowForm(f => !f)} style={{ marginRight: "0.5rem" }}>
+            <button 
+                onClick={() => setShowForm(f => !f)} 
+                className={styles.toggleButton}
+            >
                 Update
             </button>
             {showForm && (
-                <form onSubmit={handleSubmit} style={{ display: "inline-block", marginTop: "0.5rem" }}>
+                <form onSubmit={handleSubmit} className={styles.form}>
                     <input
                         type="text"
                         name="car_brand"
@@ -67,7 +71,7 @@ function UpdateCar({ car, baseUrl, onUpdated }) {
                         onChange={handleChange}
                         placeholder="Brand"
                         required
-                        style={{ marginRight: "0.5rem" }}
+                        className={styles.input}
                     />
                     <input
                         type="text"
@@ -76,7 +80,7 @@ function UpdateCar({ car, baseUrl, onUpdated }) {
                         onChange={handleChange}
                         placeholder="Model"
                         required
-                        style={{ marginRight: "0.5rem" }}
+                        className={styles.input}
                     />
                     <input
                         type="text"
@@ -85,7 +89,7 @@ function UpdateCar({ car, baseUrl, onUpdated }) {
                         onChange={handleChange}
                         placeholder="Year"
                         required
-                        style={{ width: "5rem", marginRight: "0.5rem" }}
+                        className={`${styles.input} ${styles.yearInput}`}
                     />
                     <input
                         type="text"
@@ -94,7 +98,7 @@ function UpdateCar({ car, baseUrl, onUpdated }) {
                         onChange={handleChange}
                         placeholder="Registration"
                         required
-                        style={{ marginRight: "0.5rem" }}
+                        className={styles.input}
                     />
                     <input
                         type="email"
@@ -103,11 +107,11 @@ function UpdateCar({ car, baseUrl, onUpdated }) {
                         onChange={handleChange}
                         placeholder="Your email"
                         required
-                        style={{ marginRight: "0.5rem" }}
+                        className={styles.input}
                     />
-                    <button type="submit">Save</button>
-                    {error && <span style={{ color: "red", marginLeft: "0.5rem" }}>{error}</span>}
-                    {success && <span style={{ color: "green", marginLeft: "0.5rem" }}>{success}</span>}
+                    <button type="submit" className={styles.submitButton}>Save</button>
+                    {error && <span className={styles.error}>{error}</span>}
+                    {success && <span className={styles.success}>{success}</span>}
                 </form>
             )}
         </>

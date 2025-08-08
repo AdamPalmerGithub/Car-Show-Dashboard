@@ -1,0 +1,57 @@
+.toggleButton {
+    margin-right: 0.5rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.toggleButton:hover {
+    background-color: #001f4d;
+}
+
+.form {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.input {
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.yearInput {
+    width: 5rem;
+}
+
+.submitButton {
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submitButton:hover {
+    background-color: #001f4d;
+}
+
+.error {
+    color: red;
+    margin-left: 0.5rem;
+}
+
+.success {
+    color: green;
+    margin-left: 0.5rem;
+}

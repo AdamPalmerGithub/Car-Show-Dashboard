@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import styles from "./ShowList.module.css";
 
 function ShowList({ baseUrl }) {
     const [shows, setShows] = useState([]);
@@ -46,25 +47,31 @@ function ShowList({ baseUrl }) {
     if (error) return <p style={{ color: 'red' }}>{error}</p>;
 
     return (
-        <div>
-            <h2>Show List</h2>
+        <div className={styles.showList}>
+            <h2 className={styles.heading}>Show List</h2>
             {shows.length === 0 ? (
-            <p>No shows found.</p>
+                <p className={styles.noShows}>No shows found.</p>
             ) : (
-            <ul>
-                {shows.map((show, index) => (
-                <li key={index} style={{ marginBottom: '1rem' }}>
-                    <strong>{show.show_name}</strong><br />
-                    Country: {show.show_country}<br />
-                    County: {show.show_county}<br />
-                    Date: {show.show_date}<br />
-                    Ground ID: {show.show_ground_id}<br />
-                    <Link to={`/show/${show.show_ground_id}`}>
-                        <button>Detail & Entry</button>
-                    </Link>
-                </li>
-                ))}
-            </ul>
+                <ul className={styles.list}>
+                    {shows.map((show, index) => (
+                        <li key={index} className={styles.listItem}>
+                            <div className={styles.showName}>{show.show_name}</div>
+                            <div className={styles.detail}>Country: {show.show_country}</div>
+                            <div className={styles.detail}>County: {show.show_county}</div>
+                            <div className={styles.detail}>
+                                Date: {new Date(show.show_date).toLocaleDateString("en-GB", {
+                                    day: "2-digit",
+                                    month: "short",
+                                    year: "numeric"
+                                })}
+                            </div>
+                            <div className={styles.detail}>Ground ID: {show.show_ground_id}</div>
+                            <Link to={`/show/${show.show_ground_id}`}>
+                                <button className={styles.detailButton}>Detail & Entry</button>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             )}
         </div>
     );

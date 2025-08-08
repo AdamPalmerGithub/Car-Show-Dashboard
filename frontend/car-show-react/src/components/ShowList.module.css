@@ -1,0 +1,60 @@
+.showList {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    color: navy;
+    margin-bottom: 1.5rem;
+}
+
+.noShows {
+    text-align: center;
+    font-style: italic;
+    color: grey;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listItem {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.showName {
+    font-weight: bold;
+    color: navy;
+}
+
+.detail {
+    margin: 0.2rem 0;
+}
+
+.detailButton {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.detailButton:hover {
+    background-color: #001f4d;
+}
