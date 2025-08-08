@@ -1,0 +1,64 @@
+.container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    color: navy;
+    margin-bottom: 1.5rem;
+}
+
+.addButton {
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    padding: 0.6rem 1.2rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.addButton:hover {
+    background-color: #001f4d;
+}
+
+.noCars {
+    text-align: center;
+    color: #555;
+    font-size: 1rem;
+}
+
+.carList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carItem {
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.carItem p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+.carActions {
+    margin-top: 0.6rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}

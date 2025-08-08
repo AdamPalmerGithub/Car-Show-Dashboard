@@ -1,0 +1,83 @@
+.form {
+    max-width: 300px; /* was 400px */
+    margin: 2rem auto;
+    padding: 3.75rem; /* was 5rem */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* slightly smaller shadow */
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 1rem; /* was 1.5rem */
+    color: navy;
+    font-size: 1.2rem; /* add smaller font */
+}
+
+.formGroup {
+    margin-bottom: 0.75rem; /* was 1rem */
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 0.2rem; /* was 0.3rem */
+    text-align: center;
+    font-size: 0.9rem; /* added smaller font */
+}
+
+.input {
+    font-size: 22px; /* was 30px */
+    padding: 0.3em 0.45em; /* was 0.4em 0.6em */
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    text-align: center;
+}
+
+.input:focus {
+    border-color: navy;
+    box-shadow: 0 0 4px rgba(0, 0, 128, 0.4); /* was 5px */
+}
+
+.error {
+    color: red;
+    font-size: 0.75rem; /* was 0.85rem */
+    margin-top: 0.2rem; /* was 0.3rem */
+}
+
+.button {
+    padding: 0.5rem; /* was 0.7rem */
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem; /* was 1.1rem */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 0.75rem; /* was 1rem */
+}
+
+.button:hover {
+    background-color: #001f4d;
+}
+
+.button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.backButton {
+    margin-left: 0.75rem; /* was 1rem */
+    background-color: grey;
+}
+
+.submitMessage {
+    text-align: center;
+    margin-top: 0.75rem; /* was 1rem */
+    font-weight: bold;
+    font-size: 0.9rem; /* slightly smaller */
+}

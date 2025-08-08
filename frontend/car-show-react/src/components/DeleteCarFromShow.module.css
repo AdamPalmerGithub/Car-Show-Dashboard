@@ -1,0 +1,50 @@
+.form {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.input {
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    outline: none;
+    min-width: 220px;
+}
+
+.input:focus {
+    border-color: navy;
+    box-shadow: 0 0 5px rgba(0, 0, 128, 0.3);
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #001f4d;
+}
+
+.message {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

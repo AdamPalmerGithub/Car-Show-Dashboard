@@ -1,0 +1,25 @@
+.footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.emailText {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.copyText {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    font-size: 0.85rem;
+    margin: 0;
+    text-align: left;
+}
+

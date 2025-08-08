@@ -1,0 +1,50 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mainMenuBtn,
+.userRegBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    color: navy;
+    border: none;
+    padding: 0.4em 1em;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.mainMenuBtn {
+    left: 5%;
+}
+
+.userRegBtn {
+    right: 5%;
+}
+
+.mainMenuBtn:hover,
+.userRegBtn:hover {
+    background: #e0e0e0;
+    color: #001f4d;
+}
